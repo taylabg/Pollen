@@ -2,59 +2,61 @@
 /* CSS Document */
 
 h1, h3  {
-    font-family: 'Cutive Mono', monospace;
-    font-weight: 500;
-    color: rgba(90, 132, 218, .3);
-    line-height: 1.5;
+   	font-family: 'Cutive Mono', monospace;
+   	font-weight: 500;
+	color: rgba(90, 132, 218, .3);
+    	line-height: 1.5;
 	text-decoration: none;
 }
 
 #welcome {
-    position: absolute;
-    bottom: 30%;
-    right: 10%;
-    z-index: 3;
+    	position: absolute;
+    	bottom: 30%;
+    	right: 10%;
+	z-index: 3;
 	transition: opacity 2.0s ease-in-out;
-    opacity: 0;
+	opacity: 0;
 }
 
 #enter {
-    position: absolute;
-    bottom: 25%;
-    right: 10%;
-    z-index: 3;
+	position: absolute;
+   	bottom: 25%;
+    	right: 10%;
+    	z-index: 3;
 	transition: opacity 5.0s ease-in-out;
-    opacity: 0;
-    pointer-events: none;
+    	opacity: 0;
+    	pointer-events: none;
 }
 
 .VideoBackground {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    object-fit: cover;
-    z-index: -1;
+	position: fixed;
+    	right: 0;
+    	bottom: 0;
+    	object-fit: cover;
+	overflow: hidden;
+	pointer-events: none;
+    	z-index: -1;
 }
 
 .foreground {
-    position: fixed;
+   	 position: fixed;
 	object-fit: cover;
-    top: 0px;
+    	top: 0px;
 	left: 0px;
 	min-height: 100%;
-    z-index: 0;
+   	 z-index: 0;
 }
 
 .background { 
 	position: absolute; /* Change to relative if including class continue */
-    left: 0px;
-    top: 0px; 
+    	left: 0px;
+    	top: 0px; 
 	margin: 0;
-    z-index: -2;
+    	z-index: -2;
 	perspective: 2px;
 }
 
-/* Sarah Ignore Details for next page if needed
+/* Ignore Details for next page if needed
 .continue {
 	position: relative;
     bottom: 400px;
